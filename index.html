@@ -64,7 +64,7 @@
                 <h3><span>Qualifications:</span> <div class="auto_type_qualification"></div></h3>
                 <h3><span>Skills:</span><div class="auto_type_skills">Student</div> </h3>
                 <h3><span>Language:</span>English, Tamil</h3>
-                <a href=""><button class="btn">Download CV <i class="fas fa-download"></i></button></a>
+                <a href=""><button class="btn" onclick="Download()">Download CV <i class="fas fa-download"></i></button></a>
             </div>
 
             <div class="counter">
@@ -291,25 +291,50 @@
         <h1 class="heading"> My<span>Projects</span></h1>
     
         <div class="box-container">
-            <div class="box" onclick="showBigImage('images/img.jpg')">
-                <img src="images/img.jpg" alt="">
+            <div class="box" onclick="showBigImage('images/auto_cars.png')">
+                <img src="images/auto_cars.png" alt="">
                 <div class="box-content">
-                    <h2>Title 1</h2>
-                    <p>Description goes here.</p>
-                    <button onclick="readMore()"><i class="fa fa-eye"></i></button>
+                    <h2>Auto Cars Taxi Booking System</h2>
+                    <p>🚗 Revolutionizing Travel: Introducing the Auto Cars Taxi Booking System Prototype! 🌟</p>
+                    <button onclick="readMore('auto_cars')"><i class="fa fa-eye"></i></button>
                 </div>
             </div>
             
-            <div class="box" onclick="showBigImage('images/img.jpg')">
-                <img src="images/img.jpg" alt="">
+            <div class="box" onclick="showBigImage('images/evideo_cloud.png')">
+                <img src="images/evideo_cloud.png" alt="">
                 <div class="box-content">
-                    <h2>Title 2</h2>
-                    <p>Description goes here.</p>
-                    <button onclick="readMore()"><i class="fa fa-eye"></i></button>
+                    <h2>E-Video Cloud (EVC) mobile app</h2>
+                    <p>🎬 This innovative movie marketplace caters to both admins and users.</p>
+                    <button onclick="readMore('evideo_cloud')"><i class="fa fa-eye"></i></button>
                 </div>
             </div>
 
-    <!-- Add more boxes as needed -->
+            <div class="box" onclick="showBigImage('images/oxford_system.png')">
+                <img src="images/oxford_system.png" alt="">
+                <div class="box-content">
+                    <h2>Oxford Students Managements</h2>
+                    <p>Enhance the student management process for Oxford institutions.</p>
+                    <button onclick="readMore('oxford_system')"><i class="fa fa-eye"></i></button>
+                </div>
+            </div>
+
+            <div class="box" onclick="showBigImage('images/bite_byte.png')">
+                <img src="images/bite_byte.png" alt="">
+                <div class="box-content">
+                    <h2>ByteBite Coding Learning App 📱</h2>
+                    <p>ByteBite, diving into the world of coding has never been more accessible.</p>
+                    <button onclick="readMore('bite_byte')"><i class="fa fa-eye"></i></button>
+                </div>
+            </div>
+
+            <div class="box" onclick="showBigImage('images/cleanscape.png')">
+                <img src="images/cleanscape.png" alt="">
+                <div class="box-content">
+                    <h2>Cleanscape Management App</h2>
+                    <p>Cleanscape aims to reshape the way we perceive and interact with our urban environment.</p>
+                    <button onclick="readMore('cleanscape')"><i class="fa fa-eye"></i></button>
+                </div>
+            </div>
 </div>
 
     
@@ -345,12 +370,12 @@
 
             <form action="">
 
-                <input type="text" placeholder="Name" class="box">
-                <input type="email" placeholder="Email" class="box">
-                <input type="text" placeholder="Subject" class="box">
-                <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="Message"></textarea>
+                <input type="text" placeholder="Name" class="box" id="name">
+                <input type="email" placeholder="Email" class="box" id="email">
+                <input type="text" placeholder="Subject" class="box" id="subject">
+                <textarea name="" id="message" cols="30" rows="10" class="box message" placeholder="Message"></textarea>
 
-                <button type="submit" class="btn">Send<i class="fas fa-paper-plane"></i></button>
+                <button type="button" class="btn" onclick="contact()">Send<i class="fas fa-paper-plane"></i></button>
 
 
             </form>

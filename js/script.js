@@ -233,6 +233,48 @@ function createDiv(height, width) {
   return (div);
 }
 
+function readMore(item) {
+    switch (item) {
+        case 'auto_cars':
+            window.open("https://www.figma.com/file/xfMS8WezRn6xhIuPhaPw89/Auto-Cars---Taxi-Booking-System?type=design&node-id=0%3A1&mode=design&t=hdIGweVSsEjDr16i-1", '_blank');
+            break;
+        case 'evideo_cloud':
+            window.open("https://www.figma.com/file/aYEMfGC7geDe8sBFlgHSxv/E-Video-Cloud-(EVC)?type=design&node-id=0%3A1&mode=design&t=6EHp0YgyPl4VAdtW-1", '_blank');
+            break;
+        case 'oxford_system':
+            window.open("https://www.figma.com/community/file/1250815928359119367", '_blank');
+            break;
+        case 'bite_byte':
+            window.open("https://www.figma.com/community/file/1300101419239007499", '_blank');
+            break;
+        case 'cleanscape':
+            window.open("https://www.figma.com/community/file/1300102560285612302/cleanscape-urban-cleanliness-management-app", '_blank');
+            break;
+        default:
+            alert("Invalid item");
+    }
+}
+
+function Download() {
+    window.open("https://drive.google.com/file/d/1Zo6zHlIHbqRhxVfnqwbVfMIn8TzEZ_oB/view?usp=drive_link", '_blank');
+}
+
+function contact() {
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var subject = document.getElementById("subject").value;
+    var message = document.getElementById("message").value;
+
+    var url = "https://wa.me/+94754043760?text=" +
+    "My Name: " + name + "%0A" +
+    "My Email: " + email + "%0A" +
+    "Subject: " + subject + "%0A" +
+    "Message: " + message;
+
+    window.open(url, '_blank');
+}
+
+
 
 
 
