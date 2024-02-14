@@ -250,6 +250,9 @@ function readMore(item) {
         case 'cleanscape':
             window.open("https://www.figma.com/community/file/1300102560285612302/cleanscape-urban-cleanliness-management-app", '_blank');
             break;
+        case 'idspot':
+            window.open("https://www.figma.com/file/uTppM8MXOcsVqw2RrhTYOW/ID-Spot?type=design&node-id=0%3A1&mode=design&t=wY1WLBJXKsYYHt1f-1", '_blank');
+            break;
         default:
             alert("Invalid item");
     }
